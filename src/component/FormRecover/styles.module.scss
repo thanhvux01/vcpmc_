@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    .logo-wrapper{
+        background-color: #ffff;
+        border-radius: 122px;
+        >img{
+            width: 287;
+            height: 217;
+            object-fit: fill;
+        }
+    }
+    .form-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+         >label{
+             font-family: MontserratBold;
+             color: #FFFF;
+             font-size: 36px;
+             
+         }
+         >p{
+            font-family: Montserrat;
+            color: #FFFF;
+         }
+         .input{
+            width: 598px;
+            height: 48px;
+            border-radius: 8px;
+         }
+         .btn{
+            background-color: #FF7506;
+            min-width: 208px;
+            min-height: 56px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-family: Montserrat;
+        }
+    }       
+}

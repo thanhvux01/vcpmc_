@@ -1,0 +1,19 @@
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #2B2B3F;
+    border-radius: 8px;
+    >input{
+        width: 501px;
+        height: 48px;
+        background-color: #2B2B3F;
+        padding: 12px;
+        outline: none;
+    }
+    .icon{
+        color: #FFFF;
+        margin-left: auto;
+        margin-right: 12px;
+    }
+}

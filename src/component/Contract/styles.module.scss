@@ -1,0 +1,182 @@
+
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 158px 56px 59px;
+    >h2{
+        color: #FFFF;
+        font-family: Montserrat;
+        font-size: 36px;
+    }
+    .table-section{
+        display: flex;
+        flex-direction: column;
+        .sort-section{
+            display: flex;
+            gap: 54px;
+        }
+    }
+    .search{
+        margin-left: auto;
+       
+    }
+   /*style config */
+   .xs{
+    width: 265px !important;
+    height: 48px;
+    
+}
+    .important{
+        &::after{
+            content: ' *';
+            color: red;
+        }
+    }
+  
+    .md3{
+        width: 311px !important;
+    }
+    .md2{
+        width: 154px !important;
+    }
+    .left{
+        margin-right: auto !important;
+    }
+    .middle{
+        flex-direction: row !important;
+        >label{
+            color: #FFFF;
+            font-size: Montserrat
+        }
+    }
+    .right{
+        margin-left: auto !important;
+        >label{
+            color: #FFFF;
+            font-size: Montserrat
+        }
+    }
+    .right-bottom{
+        margin-left: auto !important;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .middle-bottom{
+        flex-direction: column !important;
+        >label{
+            
+            color: #FFFF;
+            font-size: Montserrat
+        }
+        .gender{
+            display: flex;
+            align-items: center;
+            color: #FFFF;
+            font-size: Montserrat
+        }
+    }
+    //**Section for CreateContract **/
+    .form{
+        display: flex;
+        margin: 24px 0px;
+        .section{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .input-wrapper{
+                color: #FFFF;
+                display: flex;
+                align-items: center;
+                gap:26px;
+                label{
+                    min-width: 126px;
+                    font-family: Montserrat;
+                   
+                }
+            }
+            .input{
+                border-radius: 8px;
+                padding: 11px 16px 13px;
+                width: 414px;
+                height: 48px;
+                color:  #FFFF;
+            }
+            .file{
+                display: flex;
+                flex-direction: column;
+                color: #FFAC69;
+                .btn{
+                    width: 108px;
+                    height: 40px;
+                    display: flex;
+                    border: 1px solid #FFAC69;
+                    border-radius: 6px;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+            .combo{
+                color: #FFFF;
+                font-family: Montserrat;
+                display: flex;
+                gap:42px;
+                
+                .price{
+                    border-left: #727288 solid 1px;
+                  display: flex;
+                  flex-direction: column;
+                  padding-left: 13px;
+                  label{
+                    width: 130px;
+                  }
+                  .contract{
+                    display: flex;
+                    align-items: center;
+                    input{
+                        width: 169px;
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
+/*Style for bottom form */
+.bottom{
+    
+   
+    margin-top: 80px !important;
+    .left{
+        
+        .input-wrapper{
+            label{
+                min-width: 174px !important;
+                font-family: Montserrat;
+            }
+        }
+    }
+   
+}
+/*last part */
+.interact-section {
+     display: flex;
+     flex-direction: column;
+    .note{
+        color: #FFFF;
+        &::before{
+            content: '*';
+            font-size: 20px;
+            color: red;
+        }
+    }
+    .button-area{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+    }
+}

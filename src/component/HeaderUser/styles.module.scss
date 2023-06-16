@@ -1,0 +1,22 @@
+
+
+.user-wrapper{
+    display: grid;
+    grid-template-columns: 40px 84px;
+    height: 40px;
+    column-gap: 8px;
+    cursor: pointer;
+    .avatar{
+        grid-row: 1/span 2;
+       
+    }
+    .user-name{
+        grid-column: 2;
+        color: #F5F5FF;
+    }
+    .role{
+        grid-column: 2;
+        grid-row: 2;
+        color: #B65100;
+    }
+}

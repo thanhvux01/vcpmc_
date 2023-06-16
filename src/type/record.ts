@@ -1,0 +1,19 @@
+export type record = {
+     name:string,
+     isrc:string,
+     length:number,
+     singer:string,
+     composer:string,
+     category:string,
+     format:string,
+     createDate:string,
+     upload:string,
+     approve:string,
+     approveDate:string,
+     producer:string,
+     contract:{
+        contractID:string,
+        authorizeDate:string,
+        expDate:string,
+     }
+}

@@ -1,0 +1,21 @@
+.wrapper{
+    .select{
+        width: 143px;
+        height: 40px;
+        
+        *img{
+            transform: translate(0%,20%);
+        }
+}
+}
+.owner-wrapper{
+    >label{
+        color: #FFFF;
+        font-size: Montserrat;
+      
+    }
+    display: flex;
+    align-items: center;
+    gap: 16px;
+   
+}

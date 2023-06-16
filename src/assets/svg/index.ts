@@ -1,0 +1,25 @@
+import eye from './fi_eye.svg';
+import ic_quanly from './quanly.svg'
+import ic_doanhthu from './doanhthu.svg'
+import ic_hotro from './hotro.svg'
+import ic_lichphat from './lichphat.svg'
+import ic_playlist from './playlist.svg'
+import ic_caidat from './caidat.svg'
+import ic_banghi from './banghi.svg'
+import date from './date.svg'
+import upload from './upload.svg'
+import edit from './edit.svg'
+import folder from './folder.svg'
+import list from './list.svg'
+import tab from './tab.svg'
+import arrowleft from './arrowleft.svg'
+import arrowright from './arrowright.svg'
+import loop from './loops.svg'
+import random from './random.svg'
+import publics from './public.svg'
+import u_trash from './u_trash.svg'
+import u_role from './u_role.svg'
+import u_plust from './u_plus.svg'
+export { eye, ic_quanly, ic_doanhthu, ic_hotro, ic_lichphat, 
+    ic_playlist, ic_caidat, ic_banghi , date , upload,edit,folder,
+    list,tab,arrowleft,arrowright,publics,loop,random,u_plust ,u_role,u_trash};
