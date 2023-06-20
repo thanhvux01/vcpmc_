@@ -35,7 +35,7 @@ export const singleScheduleSlice = createSlice({
          builder.addCase(getID.fulfilled,(state,action)=>{
              return action.payload
          })
-     
+       
     }
     
 })

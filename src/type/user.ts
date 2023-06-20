@@ -5,6 +5,7 @@ export type User = {
     Role?:string,
     Email?:string,
     Number?:string,
-    state:Boolean,
+    isLogin:Boolean,
+    error:Boolean,
 
 }

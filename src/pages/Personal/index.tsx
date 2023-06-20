@@ -17,13 +17,12 @@ const Personal = () => {
    const user = useSelector((state:RootState)=>state.auth);
    const temp = auth.currentUser;
    useEffect(()=>{
-     dispatch(getUserInfo(temp && temp.uid || ""))
-   })
-   console.log(user);
+     dispatch(getUserInfo())
+   },[])
     return (
         <div className={cx('container')}>
             <Sidebar />
-            <PersonalContent LastName={user?.LastName} FirstName={user?.FirstName} Role={user?.Role} Birthday={user?.Birthday} Number={user?.Number} Email={user?.Email}/>
+            <PersonalContent user={user}/>
         </div>
     )
 }

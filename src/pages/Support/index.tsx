@@ -10,7 +10,7 @@ const Download = () => {
   return (
     <div className={cx('container')}>
      <SideBar/>
-    <DownloadContent/>
+     <DownloadContent/>
     </div>
   )
 }

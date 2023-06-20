@@ -8,7 +8,12 @@ import { User } from '../../type/user';
 ;
 let cx = classNames.bind(styles);
 
-const PersonalContent = ({FirstName,LastName,Role,Birthday,Email,Number}:User) => {
+type IPersonalContent = {
+   user:User
+}
+
+
+const PersonalContent = ({user}:IPersonalContent) => {
   return (
     <div className={cx('container')}>
       <Header/>
@@ -16,18 +21,18 @@ const PersonalContent = ({FirstName,LastName,Role,Birthday,Email,Number}:User) =
         <div className={cx('user-wrapper')}>
             <div className={cx('avatar-section')}>
             <Avatar className={cx('avatar')}>H</Avatar>
-             {FirstName && LastName && <label>{LastName + " " + FirstName}</label> }
+             {user.FirstName && user.LastName && <label>{user.LastName + " " + user.FirstName}</label> }
             </div>
             <div className={cx('form-user')}>
-              <Input className={cx('input')} label='Họ :' defaultValue={LastName}/>
-              <Input className={cx('input')} label='Tên :' defaultValue={FirstName}/>
-              <Input className={cx('input')} label='Ngày Sinh :' defaultValue={Birthday}/>
-              <Input className={cx('input')} label='Số điện thoại :' defaultValue={Number}/>
-              <Input className={cx('input','blocked')} label='Email :' variant='blocked' defaultValue={Email}/>
+              <Input className={cx('input')} label='Họ :' defaultValue={user.LastName}/>
+              <Input className={cx('input')} label='Tên :' defaultValue={user.FirstName}/>
+              <Input className={cx('input')} label='Ngày Sinh :' defaultValue={user.Birthday}/>
+              <Input className={cx('input')} label='Số điện thoại :' defaultValue={user.Number}/>
+              <Input className={cx('input','blocked')} label='Email :' variant='blocked' defaultValue={user.Email}/>
                <br/>
-              <Input className={cx('input','blocked')} label='Tên Đăng nhập :' variant='blocked' defaultValue={Email}/>
+              <Input className={cx('input','blocked')} label='Tên Đăng nhập :' variant='blocked' defaultValue={user.Email}/>
                <br/>
-               <Input className={cx('input','blocked')} label='Vai trò :' variant='blocked' defaultValue={Role} />
+               <Input className={cx('input','blocked')} label='Vai trò :' variant='blocked' defaultValue={user.Role} />
                <br/>
                 <div className={cx('btn-section')}>
                    <Button className={cx('btn','cancel')} variant='outlined'>Huỷ</Button>

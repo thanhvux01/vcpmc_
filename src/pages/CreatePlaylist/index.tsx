@@ -57,6 +57,7 @@ const CreatePlaylist = () => {
     <div className={cx('container')}>
      <SideBar/>
      <CreatePlaylistContent handleChange={handleChange} handleSubmit={handleSubmit} records={record.records} publicc={playlist.public} removeRecordFromPlaylist={removeRecordFromPlaylist} />
+     
     </div>
   )
 }
